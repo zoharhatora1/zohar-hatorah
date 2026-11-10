@@ -22,23 +22,89 @@ section{padding:58px 0}.heading{text-align:center;max-width:720px;margin:0 auto 
 .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.photo{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.photo img{width:100%;height:300px;object-fit:cover;display:block}.photo div{padding:14px 18px}.photo strong{color:var(--p)}.photo small{display:block;color:var(--muted)}
 .donate{background:#f0e8f2}.donate-box{background:white;border:1px solid #dfcfe5;border-radius:15px;padding:30px;display:grid;grid-template-columns:1fr 250px;gap:25px;align-items:center}.donate-box h2{color:var(--p);margin:0 0 8px}.donate-box p{color:var(--muted);margin:0 0 14px}.qr-area{display:flex;flex-direction:column;align-items:center;gap:12px}.qr{width:100%;max-width:240px;border:8px solid white;box-shadow:0 2px 15px #2812321a;border-radius:8px}
 .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.contact{background:white;border:1px solid var(--line);border-radius:10px;padding:18px}.contact span{display:block;color:var(--muted);font-size:13px}.contact strong,.contact a{color:var(--p);font-size:17px;text-decoration:none;overflow-wrap:anywhere}
-footer{background:#2d0b40;color:#e9dfee;padding:23px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:760px){.hero-grid,.about-grid,.donate-box{grid-template-columns:1fr}.hero-grid{padding:38px 0}.hero-logo img{max-height:220px}.cards{grid-template-columns:1fr}.gallery-grid,.contact-grid{grid-template-columns:1fr}.photo img{height:230px}.nav{justify-content:center}nav{justify-content:center;gap:13px}.brand{width:100%;justify-content:center}.fact{flex-wrap:wrap}.qr{max-width:200px;justify-self:center}}
+/* עיצוב טבלת זמני תפילות */
+.prayer-container{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:30px}
+.prayer-card{background:white;border:2px solid var(--g);border-radius:16px;padding:30px;box-shadow:0 8px 25px #3d1a4a0a}
+.prayer-title{background:var(--p);color:white;text-align:center;font-size:24px;font-weight:bold;padding:10px;border-radius:10px;margin-bottom:25px}
+.prayer-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.prayer-col{display:flex;flex-direction:column;gap:15px}
+.prayer-item{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px dashed #e9e1d4;padding-bottom:10px}
+.prayer-name{color:var(--p);font-weight:bold;font-size:17px}
+.prayer-time{color:var(--ink);font-weight:bold;font-size:17px;text-align:left}
+.prayer-note{display:block;font-size:13px;color:var(--muted);font-weight:normal}
+@media(max-width:760px){.hero-grid,.about-grid,.donate-box,.prayer-grid{grid-template-columns:1fr}.hero-grid{padding:38px 0}.hero-logo img{max-height:220px}.cards{grid-template-columns:1fr}.gallery-grid,.contact-grid{grid-template-columns:1fr}.photo img{height:230px}.nav{justify-content:center}nav{justify-content:center;gap:13px}.brand{width:100%;justify-content:center}.fact{flex-wrap:wrap}.qr{max-width:200px;justify-self:center}}
 </style></head><body>
 <div class="topline"></div><header><div class="wrap nav">
 <a class="brand" href="#home"><img src="logo.png" alt="סמל מוסדות זוהר התורה"><span><strong>מוסדות זוהר התורה בית שאן</strong><small>מוסדות תורה וחסד · עמותה רשומה</small></span></a>
-<nav><a href="#about">אודות</a><a href="#activity">תחומי פעילות</a><a href="#building">מבנה המוסדות</a><a href="#donate">תרומות</a><a href="#contact">יצירת קשר</a></nav></div></header>
+<nav><a href="#about">אודות</a><a href="#activity">תחומי פעילות</a><a href="#building">מבנה המוסדות</a><a href="#prayers">זמני תפילות</a><a href="#donate">תרומות</a><a href="#contact">יצירת קשר</a></nav></div></header>
 <main>
 <section class="hero" id="home"><div class="wrap hero-grid"><div><div class="kicker">תורה · חסד · קהילה</div><h1>מוסדות זוהר התורה<br>בית שאן</h1><p>מוסדות תורה וחסד הפועלים למען חיזוק התורה, תמיכה וסיוע בקהילה, מתוך אחריות ונתינה.</p><a class="btn btn-gold" href="https://stage.hyp.co.il/sp/?key=b7077bfd-da1e-4623-bf3c-7ed5cda6223c&id=13633" target="_blank">לתרומה מאובטחת באשראי</a><a class="btn btn-light" href="#about">להיכרות עם המוסדות</a></div><div class="hero-logo"><img src="logo.png" alt="סמל זוהר התורה בית שאן"></div></div></section>
+
 <section id="about"><div class="wrap about-grid"><div class="about-copy"><div class="kicker" style="color:#a47a23">אודות המוסדות</div><h2 style="color:var(--p);font-size:30px">עשייה של תורה וחסד בבית שאן</h2><p><strong>מוסדות זוהר התורה בית שאן</strong> פועלים ללא מטרות רווח למען מטרות תורה וחסד, חיזוק הקהילה וסיוע לנזקקים.</p><p>העמותה בעלת אישור לפי סעיף 46 לעניין תרומות המזכות בהטבת מס, בכפוף להוראות הדין ולאישור התקף.</p><p>בראש העמותה עומד יו״ר העמותה ומנהל המוסדות, הרב מאיר אסרף הי״ו.</p></div>
 <div class="facts"><h3>פרטי העמותה</h3><div class="fact"><span>שם</span><strong>מוסדות זוהר התורה בית שאן ע״ר</strong></div><div class="fact"><span>מספר עמותה</span><strong dir="ltr">580358596</strong></div><div class="fact"><span>יו״ר ומנהל</span><strong>הרב מאיר אסרף הי״ו</strong></div><div class="fact"><span>מעמד</span><strong>עמותה ללא מטרות רווח</strong></div><div class="fact"><span>אישור מס</span><strong>סעיף 46</strong></div></div></div></section>
+
 <section class="services" id="activity"><div class="wrap"><div class="heading"><div class="kicker">תחומי פעילות</div><h2>תורה, חסד ועזרה לזולת</h2><p>מגוון מסגרות ופעילויות למען הציבור והקהילה.</p></div><div class="cards">
 <div class="card"><div class="symbol">✦</div><h3>כולל אברכים</h3><p>מסגרת לימוד תורה לאברכים והעמקת עולם התורה.</p></div><div class="card"><div class="symbol">✧</div><h3>כולל גמלאים</h3><p>מסגרת לימוד וחיבור לתורה עבור ציבור הגמלאים.</p></div><div class="card"><div class="symbol">♡</div><h3>גמ״ח וסיוע לנזקקים</h3><p>סיוע, תמיכה ועזרה למשפחות ולאנשים הזקוקים לכך.</p></div><div class="card"><div class="symbol">❖</div><h3>קירוב</h3><p>פעילות לחיזוק הקשר לתורה ולמסורת.</p></div><div class="card"><div class="symbol">✥</div><h3>מוסדות תורה</h3><p>פעילות תורנית וחינוכית בהתאם לצורכי הקהילה.</p></div><div class="card"><div class="symbol">✧</div><h3>פעילות חסד</h3><p>יוזמות של נתינה, ערבות הדדית וחיזוק הקהילה.</p></div>
 </div></div></section>
+
 <section id="building"><div class="wrap"><div class="heading"><div class="kicker">הבניין והעשייה</div><h2>מוסדות זוהר התורה – היום ובעתיד</h2><p>תיעוד המבנה הקיים לצד ההדמיה של המבנה המתוכנן.</p></div><div class="gallery-grid">
 <div class="photo"><img src="building-current.jpg" alt="מבנה המוסדות במצבו הנוכחי"><div><strong>המבנה כיום</strong><small>צילום המבנה הקיים</small></div></div><div class="photo"><img src="building-render.jpg" alt="הדמיית המבנה העתידי של מוסדות זוהר התורה"><div><strong>הדמיית המבנה העתידי</strong><small>כך צפוי להיראות מבנה המוסדות</small></div></div>
 </div></div></section>
+
+<!-- אזור זמני תפילות חדש -->
+<section id="prayers" style="background: #f0e8f2;"><div class="wrap">
+<div class="heading"><div class="kicker">סדר היום</div><h2>זמני תפילות</h2><p>הציבור מוזמן להשתתף בתפילות בבית המדרש.</p></div>
+<div class="prayer-container">
+<!-- חול -->
+<div class="prayer-card">
+<div class="prayer-title">חול</div>
+<div class="prayer-grid">
+<div class="prayer-col">
+<div class="prayer-item"><span class="prayer-name">שחרית</span><span class="prayer-time">6:30<span class="prayer-note">שני, חמישי ור״ח: 6:20</span></span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה א׳</span><span class="prayer-time">13:00</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה ב׳</span><span class="prayer-time">16:30</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית א׳</span><span class="prayer-time">סמוך</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית ב׳</span><span class="prayer-time">20:15</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית ג׳</span><span class="prayer-time">21:45</span></div>
+</div>
+<div class="prayer-col">
+<div class="prayer-item"><span class="prayer-name">מנחה ער״ש א׳</span><span class="prayer-time">12:15<span class="prayer-note">ב׳: בניסת שבת</span></span></div>
+<div class="prayer-item"><span class="prayer-name">שחרית (נוסף)</span><span class="prayer-time">7:30</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה א׳ (נוסף)</span><span class="prayer-time">12:00</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה ב׳ (נוסף)</span><span class="prayer-time">13:00</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה ג׳ (נוסף)</span><span class="prayer-time">15:30</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית (מוצש״ק)</span><span class="prayer-time">צאת שבת</span></div>
+</div>
+</div>
+</div>
+<!-- שבת -->
+<div class="prayer-card">
+<div class="prayer-title">שבת</div>
+<div class="prayer-grid">
+<div class="prayer-col">
+<div class="prayer-item"><span class="prayer-name">שחרית</span><span class="prayer-time">6:30<span class="prayer-note">שני, חמישי ור״ח: 6:20</span></span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה א׳</span><span class="prayer-time">13:00</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה ב׳</span><span class="prayer-time">16:30</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית א׳</span><span class="prayer-time">סמוך</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית ב׳</span><span class="prayer-time">20:15</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית ג׳</span><span class="prayer-time">21:45</span></div>
+</div>
+<div class="prayer-col">
+<div class="prayer-item"><span class="prayer-name">מנחה ער״ש א׳</span><span class="prayer-time">12:15<span class="prayer-note">ב׳: בניסת שבת</span></span></div>
+<div class="prayer-item"><span class="prayer-name">שחרית (נוסף)</span><span class="prayer-time">7:30</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה א׳ (נוסף)</span><span class="prayer-time">12:00</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה ב׳ (נוסף)</span><span class="prayer-time">13:00</span></div>
+<div class="prayer-item"><span class="prayer-name">מנחה ג׳ (נוסף)</span><span class="prayer-time">15:30</span></div>
+<div class="prayer-item"><span class="prayer-name">ערבית (מוצש״ק)</span><span class="prayer-time">צאת שבת</span></div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+
 <section class="donate" id="donate"><div class="wrap"><div class="donate-box"><div><div class="kicker" style="color:#a47a23">שותפים בתורה ובחסד</div><h2>תרומה למוסדות זוהר התורה</h2><p>להעברת תרומה ניתן לסרוק את הברקוד או ללחוץ על כפתור התשלום המהיר. לקבלת פרטים וסיוע בהעברה ניתן להתקשר לרב מאיר אסרף.</p><p><strong>העמותה בעלת אישור סעיף 46</strong> – זיכוי מס בהתאם להוראות הדין ולאישור התקף.</p><a class="btn btn-gold" href="https://stage.hyp.co.il/sp/?key=b7077bfd-da1e-4623-bf3c-7ed5cda6223c&id=13633" target="_blank">תרומה מאובטחת באשראי</a></div><div class="qr-area"><img class="qr" src="donation-qr.jpg" alt="ברקוד להעברת תרומה"></div></div></div></section>
+
 <section id="contact"><div class="wrap"><div class="heading"><div class="kicker">נשמח לעמוד לרשותכם</div><h2>יצירת קשר</h2><p>לפרטים נוספים, שיתופי פעולה ותרומות.</p></div><div class="contact-grid">
 <div class="contact"><span>יו״ר העמותה ומנהל המוסדות</span><strong>הרב מאיר אסרף הי״ו</strong></div><div class="contact"><span>טלפון נייד</span><a href="tel:0556682026" dir="ltr">055-668-2026</a></div><div class="contact"><span>משרד</span><a href="tel:0555586826" dir="ltr">055-558-6826</a></div><div class="contact"><span>דואר אלקטרוני</span><a href="mailto:zoharhatora1@gmail.com">zoharhatora1@gmail.com</a></div>
-</div></div></section></main><footer><div class="wrap foot"><span>© מוסדות זוהר התורה בית שאן ע״ר · 580358596</span><span>תורה · חסד · קהילה</span></div></footer></body></html>
+</div></div></section></main>
+<footer><div class="wrap foot"><span>© מוסדות זוהר התורה בית שאן ע״ר · 580358596</span><span>תורה · חסד · קהילה</span></div></footer></body></html>
